@@ -35,17 +35,22 @@ src/
 │
 ├── layouts/                                  # 🧱 Page Layout theo role
 │   ├── AuthLayout.jsx                        # Layout đăng nhập
-│   ├── KidLayout.jsx                         # Layout cho bé
+│   ├── ChildLayout.jsx                         # Layout cho bé
 │   ├── ParentLayout.jsx                      # Layout phụ huynh
-│   └── AdminLayout.jsx                       # Layout admin
-│
+│   |── AdminLayout.jsx                       # Layout admin
+│   └── GameLayout.jsx                     # Layout game
+|
+|
 ├── pages/                                    # 📄 Các màn hình chính
 │   │
 │   ├── auth/                                 # 🔐 Authentication
-│   │   └── Login.jsx                         # Login (Parent / Kid / Admin)
-│   │
-│   ├── kid/                                  # 🧒 Bé
-│   │   ├── KidDashboard.jsx                  # Chọn thế giới
+│   │   ├── ParentLogin.jsx                   # Parent
+|   |   ├── ChildLogin.jsx                    # Child
+|   |   |── PCLogin.jsx                         ← wrapper switch      parent + child                  
+│   │   └── AdminLogin.jsx                    # Admin
+|   | 
+│   ├── child/                                  # 🧒 Bé
+│   │   ├── ChildDashboard.jsx                  # Chọn thế giới
 │   │   └── WorldSelect.jsx                   # Chọn phòng chơi
 │   │
 │   ├── parent/                               # 👨‍👩‍👧 Phụ huynh
